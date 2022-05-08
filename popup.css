@@ -1,0 +1,125 @@
+body {
+    width: 200px;
+    padding: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#connected {
+    color: green;
+}
+#disconnected {
+    color: red;
+}
+
+.main-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#thanks {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.toggle-section {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: center;
+}
+.toggle-section p {
+    margin-top: 0;
+}
+
+.toggle-section .switch {
+    position: relative;
+    width: 60px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.toggle-section .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.toggle-section .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.toggle-section .switch .slider::before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #8828ff;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.toggle-section .switch input:checked + .slider:before {
+    -webkit-transform: translateX(28px);
+    -ms-transform: translateX(28px);
+    transform: translateX(28px);
+}
+
+.toggle-section .switch .slider.round {
+    border-radius: 100px;
+}
+
+.toggle-section .switch .slider.round:before {
+    border-radius: 100px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    transition: 1s all;
+}
+.form-section .form-control input {
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 0.1px solid #8828ff;
+    border-radius: 2px;
+}
+
+.form-section button {
+    padding: 6px;
+    font-size: 14px;
+    border: none;
+    background-color: #8828ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 0.1px solid #8828ff;
+}
+
+.form-section .form-control input::placeholder {
+    color: rgb(128, 128, 128, 0.5);
+}
+
+.form-section .form-control input:focus {
+    outline: none;
+}

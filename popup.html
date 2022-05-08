@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Browser Reloader</title>
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <p id="connected" class="main-text">✔ Connected</p>
+        <p id="disconnected" class="main-text">&#10006; Disconnected</p>
+
+        <div class="toggle-section">
+            <p id="local">Local</p>
+            <label class="switch" id="checkSwitch">
+                <input type="checkbox" id="checkbox" />
+                <span class="slider round"></span>
+            </label>
+            <p id="wifi">Wi-Fi</p>
+        </div>
+
+        <form class="form-section" id="form-section">
+            <div class="form-control">
+                <label for="">Ip Address:</label>
+                <input
+                    id="ipInput"
+                    type="text"
+                    placeholder="local wifi address"
+                    required
+                />
+            </div>
+            <button id="connectBtn" type="button">Connect</button>
+        </form>
+
+        <small id="thanks">Thanks for using my work 😍</small>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
