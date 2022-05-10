@@ -52,6 +52,7 @@ function setIcon(name) {
     Browser().browserAction.setIcon({
         path: {
             16: `img/${name}16.png`,
+            32: `img/${name}32.png`,
             48: `img/${name}48.png`,
             128: `img/${name}128.png`,
         },
